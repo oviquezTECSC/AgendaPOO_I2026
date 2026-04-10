@@ -1,2 +1,2 @@
-public abstract class ElementoAgenda {
+public abstract class ElementoAgenda implements Exportable {
 }

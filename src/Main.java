@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,13 +18,7 @@ public class Main {
         laAgenda.imprimirContactos();
         laAgenda.imprimirEventos();
 
-        int x = 10;
-        char c = 'a';
-        x=c;
-        c=(char)x;
-
-        ((Contacto)laAgenda.getListaElementos().get(2)).
-        ((Evento)laAgenda.getListaElementos().get(2)).enviarInvitacion(new String[]{"uno@correo.com","dos@correo.com"});
+        System.out.println(laAgenda.toXML());
 
         Agenda otraAgenda = new Agenda();
         otraAgenda.agregarElemento(new EventoReunion(LocalDate.now(),"Sala de Eventos X","2460-2222"));

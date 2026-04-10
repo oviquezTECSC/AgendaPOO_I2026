@@ -1,4 +1,4 @@
-public class Contacto extends ElementoAgenda{
+public abstract class Contacto extends ElementoAgenda{
     private Persona laPersona;
     private String direccion;
 

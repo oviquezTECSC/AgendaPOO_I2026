@@ -20,4 +20,14 @@ public final class ContactoEstudio extends Contacto{
                 "cursoCompartido='" + cursoCompartido + '\'' +
                 "} " + super.toString();
     }
+
+    @Override
+    public String exportJSON() {
+        return "";
+    }
+
+    @Override
+    public String exportXML() {
+        return "";
+    }
 }

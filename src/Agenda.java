@@ -1,7 +1,8 @@
 import java.util.LinkedList;
+import java.util.List;
 
 public class Agenda {
-    private static LinkedList<ElementoAgenda> listaElementos;
+    private LinkedList<ElementoAgenda> listaElementos;
 
     public Agenda() {
         this.listaElementos = new LinkedList<>();
@@ -27,6 +28,16 @@ public class Agenda {
             if (this.listaElementos.get(i) instanceof Evento)
                 System.out.println(this.listaElementos.get(i));
         }
+    }
+
+    public String toXML(){
+        StringBuffer text = new StringBuffer();
+        text.append("<agenda>\n");
+        for(ElementoAgenda e : listaElementos){
+            text.append("\t").append(e.exportXML());
+        }
+        text.append("</agenda>");
+        return text.toString();
     }
     @Override
     public String toString() {

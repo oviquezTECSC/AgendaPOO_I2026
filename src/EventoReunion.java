@@ -30,4 +30,14 @@ public final class EventoReunion extends Evento{
                 "telefonoEmpresa='" + telefonoEmpresa + '\'' +
                 "} " + super.toString();
     }
+
+    @Override
+    public String exportJSON() {
+        return "";
+    }
+
+    @Override
+    public String exportXML() {
+        return "";
+    }
 }
